@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" />
+    <title>测试用页面</title>
+</head>
+<body>
+  <form action="/api/placement/preData" method="get" target="testIframe">
+    年龄：<input type="text" name='age'/>
+    <br/>
+    <br/>
+
+    性别：<select name="sex" id="">
+      <option value="">请选择</option>
+      <option value="1">男</option>
+      <option value="2">女</option>
+    </select>
+    <br/>
+    <br/>
+
+    职业：
+    <label for="r1"><input type="radio" value="工程师" name="job" id="r1"> 工程师</label>
+    <label for="r1">律师<input type="radio" value="律师" name="job" id="r1"></label>
+    <br/>
+    <br/>
+
+    <input type="submit">
+  </form>
+
+  <br/>
+  <br/>
+  <!-- 此处展示请求结果 -->
+  <iframe name='testIframe' id='' src="" frameborder="0" style="border:1px solid #ccc"></iframe>
+</body>
+</html>
