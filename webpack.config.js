@@ -18,15 +18,15 @@ module.exports = {
     })
   ],
   devtool:"eval",
-  devServer:{
-    port: 8888,
-    historyApiFallback: true,
-    contentBase: path.join(__dirname, "dist"),
-    proxy: {
-      '/api': {
-        target: 'http://adnet.ke.com:18989/',
-        changeOrigin: false
-      }
-    }
-  },
+  // devServer:{
+  //   port: 8888,
+  //   historyApiFallback: true,
+  //   contentBase: path.join(__dirname, "dist"),
+  //   proxy: {
+  //     '/api': {
+  //       target: 'http://adnet.ke.com:18989/',
+  //       changeOrigin: true
+  //     }
+  //   }
+  // }
 }
